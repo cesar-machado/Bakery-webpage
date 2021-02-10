@@ -1,20 +1,32 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Button  from "./Button";
+// import Button  from "./Button";
+import './Navbar.css'
+import cake from "../assets/cake-1.png";
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true)
+  // const [button, setButton] = useState(true)
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
+  // const showButton = () => {
+  //   if (window.innerWidth <= 960) {
+  //     setButton(false);
+  //   }else {
+  //     setButton(true);
+  //   }
+  // }
+
+  // window.addEventListener('resize', showButton)
 
   return (
     <>
       <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          MYSITE <i className="fab fa-typo3" />
+          Bakery <img src={cake} alt='cake' height='30' width='30'/>
         </Link>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -35,8 +47,17 @@ function Navbar() {
               Cakes
             </Link>
           </li>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {/* <li>
+              <Link
+                to='/sign-up'
+                className='nav-links-mobile'
+                onClick={closeMobileMenu}
+              >
+                Sign Up
+              </Link>
+            </li> */}
         </ul>
+        {/* {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>} */}
       </div>
       </nav>
     </>
