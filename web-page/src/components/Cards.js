@@ -10,7 +10,7 @@ export default function Cards() {
         <div className="cards-wrapper">
           <ul className="cards-items">
             <CardItem
-              src="images/cake7.jpg"
+              src="images/img2.jpg"
               //   text="Wedding cake "
               label="Wedding Cake"
               path="/Cakes"
@@ -18,7 +18,7 @@ export default function Cards() {
             <CardItem
               src="images/img-3.jpg"
               //   text="Cake with chocolate"
-              label="Wedding Cake"
+              label="Cake for all occasions"
               path="/Cakes"
             />
           </ul>

@@ -38,12 +38,13 @@ const Order = () => {
         setFieldValue("logradouro", data.logradouro);
         setFieldValue("bairro", data.bairro);
         setFieldValue("cidade", data.localidade);
-        setFieldValue("uf", data.uf);
+        // setFieldValue("uf", data.uf);
       });
   }
   return (
     <div className="order">
       <div className="order-container">
+        
         <Formik
           onSubmit={onSubmit}
           validateOnMount
@@ -63,45 +64,78 @@ const Order = () => {
         >
           {({ isValid, setFieldValue }) => (
             <Form>
+              <h1>Contact</h1>
               <div className="form-control-group">
                 <label> Your Name</label>
-                <Field id="firstName" name="firstName" type="text" placeholder="First Name" />
-                <ErrorMessage name="firstName" />
+                <Field
+                  id="firstName"
+                  name="firstName"
+                  type="text"
+                  placeholder="First Name"
+                />
+                <ErrorMessage id='error' name="firstName" />
                 {/* <label>Last Name</label> */}
-                <Field id="lastName" name="lastName" type="text" placeholder="Last Name"/>
-               
-                
+                <Field
+                  id="lastName"
+                  name="lastName"
+                  type="text"
+                  placeholder="Last Name"
+                />
               </div>
               <div className="form-control-group">
-                 <label>Email</label>
-                <Field id="email" name="email" type="email" placeholder=" Email" />
+                <label>Email</label>
+                <Field
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder=" Email"
+                />
               </div>
               <div className="form-control-group">
                 <label>Home</label>
                 <Field
+                  id="cep"
                   name="cep"
                   type="text"
                   onBlur={(ev) => onBlurCep(ev, setFieldValue)}
-                  placeholder="Bairro"
+                  placeholder="Cep"
                 />
                 {/* <label>Logradouro</label> */}
-                <Field name="logradouro" type="text" placeholder="Bairro" />
+                <Field
+                  id="rua"
+                  name="logradouro"
+                  type="text"
+                  placeholder="Rua"
+                />
                 {/* <label>Número</label> */}
-                <Field name="numero" type="text" placeholder="Bairro" />
+                <Field
+                  id="numero"
+                  name="numero"
+                  type="text"
+                  placeholder="Número"
+                />
               </div>
-              <div className="form-control-group">
+              <div className="form-last">
                 {/* <label>Complemento</label> */}
-                <Field name="complemento" type="text" placeholder="Bairro"/>
+                <Field
+                  id="complemento"
+                  name="complemento"
+                  type="text"
+                  placeholder="Complemento"
+                />
                 {/* <label>bairro</label> */}
-                <Field name="bairro" type="text" placeholder="Bairro"  />
-                <Field name="cidade" type="text" placeholder="Bairro" />
-                <Field name="uf" type="text" placeholder="Bairro"/>
-              </div>
-             
-              <div className="form-control-group"></div>
-              <div className="form-control-group">
-                {/* <label>Cidade</label> */}
-               
+                <Field
+                  id="bairro"
+                  name="bairro"
+                  type="text"
+                  placeholder="Bairro"
+                />
+                <Field
+                  id="cidade"
+                  name="cidade"
+                  type="text"
+                  placeholder="Cidade"
+                />
               </div>
               <div className="form-control-group">
                 {/* <label>Estado</label> */}
@@ -112,7 +146,9 @@ const Order = () => {
                   <option value="SC">Santa Catarina</option>
                 </Field> */}
               </div>
-              <button type="submit">Enviar</button>
+              <button className='btn-form' type="submit" disabled={!isValid}>
+                Enviar
+              </button>
             </Form>
           )}
         </Formik>

@@ -22,4 +22,85 @@
   max-width: 1120px;
   width: 80%;
   margin: 0 auto;
+  
 }
+
+h1 {
+  margin-top: 20px;
+}
+
+
+#firstName {
+  margin: 0 20px 20px 20px;
+  margin-top: 20px;
+  /* border-radius: 5px; */
+  height: 25px;
+}
+
+#lastName {
+  height: 25px;
+}
+
+#email {
+  margin: 20px;
+  margin-top: 10px;
+  /* border-radius: 5px; */
+  margin-left: 59px;
+  height: 25px;
+  width: 368px;
+  height: 25px;
+}
+
+#cep {
+  /* margin: 20px; */
+  margin-top: 10px;
+  /* border-radius: 5px; */
+  margin-left: 59px;
+  height: 25px;
+}
+
+#rua {
+  height: 25px;
+  margin-left: 10px;
+}
+
+#numero {
+  margin-left: 10px;
+  height: 25px;
+}
+
+#complemento {
+  /* margin: 20px; */
+  /* margin-top: 10px; */
+  /* border-radius: 5px; */
+  margin-left: 102px;
+  height: 25px;
+}
+
+#cidade {
+  margin-top: 10px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+#bairro {
+  height: 25px;
+  margin-left: 10px;
+}
+
+.btn-form {
+  width: 60px;
+  height: 40px;
+  background-color: rgb(129, 64, 20);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+ErrorMessage {
+  color: red;
+  margin: 20px;
+}
+
+
+
+
