@@ -7,7 +7,7 @@ function Main() {
   return (
     <div className="main-container">
       <video src='/videos/cakes-2.mp4' autoPlay loop muted />
-      <h1>Beautiful e delicious Cakes </h1>
+      <h1>Beautiful and delicious Cakes </h1>
       <p>What are you waiting</p>
       <div className="main-btns">
         <Button

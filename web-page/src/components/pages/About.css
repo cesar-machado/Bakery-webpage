@@ -1,0 +1,53 @@
+.about {
+    display: flex;
+    height: 90vh;
+    /* align-items: flex-start; */
+    /* justify-content:flex-start; */
+    font-size: 3rem;
+    /* margin-top: ; */
+}
+
+.about {
+    background: url('../../assets/about.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #242424;
+    /* font-size: 100px; */
+  }
+
+.about-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+.text h1 {
+    font-size: 80px;
+    text-align: left;
+    font-family: 'Dancing Script', cursive;
+    margin-top: 60px;
+}
+
+.text p {
+    color: #000000;
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+    text-align: justify;
+    font-family: 'Pangolin', cursive;
+    margin-top: 15px;
+
+}
+
+@media screen and (max-width: 960px) {
+  .about-container h1 {
+    margin-top: 200px;
+  }
+
+  .text p {
+    font-size: 1.0rem;
+  }
+}

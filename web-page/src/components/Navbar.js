@@ -1,25 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-// import Button  from "./Button";
+import Button  from "./Button";
 import './Navbar.css'
-// import cake from "../assets/cake-1.png";
+
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  // const [button, setButton] = useState(true)
+  const [button, setButton] = useState(true)
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  // const showButton = () => {
-  //   if (window.innerWidth <= 960) {
-  //     setButton(false);
-  //   }else {
-  //     setButton(true);
-  //   }
-  // }
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    }else {
+      setButton(true);
+    }
+  }
 
-  // window.addEventListener('resize', showButton)
+  useEffect(() => {
+    showButton();
+  }, []);
+
+  window.addEventListener('resize', showButton)
 
   return (
     <>
@@ -38,26 +42,26 @@ function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+            <Link to="/About" className="nav-links" onClick={closeMobileMenu}>
               About us.
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+            <Link to="/Cakes" className="nav-links" onClick={closeMobileMenu}>
               Cakes
             </Link>
           </li>
-          {/* <li>
+          <li>
               <Link
-                to='/sign-up'
+                to='/order'
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                Sign Up
+                Order Now
               </Link>
-            </li> */}
+            </li>
         </ul>
-        {/* {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>} */}
+        {button && <Button buttonStyle='btn--outline'>Order Now</Button>}
       </div>
       </nav>
     </>

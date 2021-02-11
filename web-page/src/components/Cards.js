@@ -11,34 +11,34 @@ export default function Cards() {
           <ul className="cards-items">
             <CardItem
               src="images/img2.jpg"
-              text="Cake with chocolate"
-              label="Cake"
+              //   text="Wedding cake "
+              label="Wedding Cake"
               path="/Cakes"
             />
             <CardItem
               src="images/img3.jpg"
-              text="Cake with chocolate"
-              label="Cake"
+              //   text="Cake with chocolate"
+              label="Wedding Cake"
               path="/Cakes"
             />
           </ul>
           <ul className="cards-items">
             <CardItem
               src="images/img4.jpg"
-              text="Cake with chocolate"
-              label="Cake"
+              //   text="Cake with chocolate"
+              label="Naked Cake"
               path="/Cakes"
             />
             <CardItem
               src="images/img5.jpg"
-              text="Cake with chocolate"
-              label="Cake"
+              //   text="Cake with chocolate"
+              label="Anniversary Cake"
               path="/Cakes"
             />
-                        <CardItem
+            <CardItem
               src="images/img6.jpg"
-              text="Cake with chocolate"
-              label="Cake"
+            //   text="Cake with chocolate"
+              label="Anniversary Cake"
               path="/Cakes"
             />
           </ul>
