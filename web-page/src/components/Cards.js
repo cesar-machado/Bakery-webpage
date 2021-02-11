@@ -10,13 +10,13 @@ export default function Cards() {
         <div className="cards-wrapper">
           <ul className="cards-items">
             <CardItem
-              src="images/img2.jpg"
+              src="images/cake7.jpg"
               //   text="Wedding cake "
               label="Wedding Cake"
               path="/Cakes"
             />
             <CardItem
-              src="images/img3.jpg"
+              src="images/img-3.jpg"
               //   text="Cake with chocolate"
               label="Wedding Cake"
               path="/Cakes"
