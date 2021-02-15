@@ -1,6 +1,6 @@
 # Web-Page for bakery.
 
-I made this site to train but about react js.
+I made this site to train more about react js.
 
 
 ### Installing
