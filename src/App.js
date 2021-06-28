@@ -1,12 +1,10 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
+import Navbar from "./components//navbar/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./components/pages/Home";
-import About from "./components/pages/About";
-import Cakes from "./components/pages/Cakes";
-import Order from "./components/pages/Order";
-
-
+import Home from "./pages/home/Home";
+import About from "./pages/about/About";
+import Cakes from "./pages/cakes/Cakes";
+import Order from "./pages/order/Order";
 
 function App() {
   return (

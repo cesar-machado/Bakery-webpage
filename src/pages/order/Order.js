@@ -1,9 +1,8 @@
-import React,{ useState} from "react";
+import React, { useState } from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import "./Order.css";
-import Modal from '../Modal'
-
+import Modal from "../../components/modal/Modal";
 
 const schema = Yup.object().shape({
   firstName: Yup.string()
@@ -15,19 +14,15 @@ const schema = Yup.object().shape({
     .max(50, "Too Long!")
     .required("Required"),
   email: Yup.string().email("Invalid email").required("Required"),
-  mobile: Yup.number().required("Required")
+  mobile: Yup.number().required("Required"),
 });
-
-
 
 const Order = () => {
   const [dropdown, setDropdown] = useState(false);
-  
 
-
-  function onSubmit(values, {resetForm}) {
+  function onSubmit(values, { resetForm }) {
     console.log(JSON.stringify(values, null, 2));
-    resetForm({ values: ''})
+    resetForm({ values: "" });
   }
 
   function onBlurCep(ev, setFieldValue) {
@@ -67,7 +62,7 @@ const Order = () => {
             bairro: "",
             cidade: "",
             uf: "",
-            description: ''
+            description: "",
           }}
         >
           {({ isValid, setFieldValue }) => (
@@ -158,14 +153,19 @@ const Order = () => {
               <div className="form-description">
                 <label>Describe your Cake</label>
                 <Field
-                  as='textarea'
+                  as="textarea"
                   id="textArea"
                   name="description"
                   type="textarea"
                   // placeholder="Describe your cake"
                 />
               </div>
-              <button className="btn-form" type="submit" disabled={!isValid} onClick={setDropdown}>
+              <button
+                className="btn-form"
+                type="submit"
+                disabled={!isValid}
+                onClick={setDropdown}
+              >
                 Submit
               </button>
               {dropdown ? <Modal onClose={() => setDropdown(false)} /> : null}
@@ -173,11 +173,8 @@ const Order = () => {
           )}
         </Formik>
       </div>
-      
     </div>
   );
 };
 
 export default Order;
-
-
