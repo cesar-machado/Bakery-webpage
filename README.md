@@ -1,19 +1,43 @@
-# Web-Page for bakery.
+# Site para uma bakery.
 
-I made this site to train more about react js.
+Fiz esse projeto para ser um site para uma doceria, padaria e afins.
+
+## Essa é a url do projeto.
+
+[Web site](https://web-page-six.vercel.app/)
 
 
-### Installing
+## Tecnologias Utilizadas:
 
-You need use Npm Install for Install all dependencies.
+- [React JS](https://pt-br.reactjs.org/) <br>
+- Formik
+- yup
 
-### `npm start`
+### **Pré-requisitos**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- É **necessário** possuir o **[Node.js](https://nodejs.org/en/)** instalado na máquina
+- Também, é **preciso** ter um gerenciador de pacotes seja o **[NPM](https://www.npmjs.com/)** ou **[Yarn](https://yarnpkg.com/)**.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Faça um clone :
+
+```sh
+  $ git clone https://github.com/cesar-machado/Bakery-webpage.git
+```
+
+2. Executando a Aplicação:
+
+```sh
+  # Instale as dependências
+  $ npm install ou yarn
+
+  # Inicie a aplicação React JS
+  $ cd bakery-webpage
+  $ npm start ou yarn start
+```
+
+<h4 align="center">
+    Feito com 💜 by <a href="https://www.linkedin.com/in/cesar-mach/" target="_blank">César Machado</a>
+</h4>
 
 ## this is the url for this project.
 
