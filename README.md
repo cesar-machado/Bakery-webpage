@@ -39,9 +39,6 @@ Fiz esse projeto para ser um site para uma doceria, padaria e afins.
     Feito com 💜 by <a href="https://www.linkedin.com/in/cesar-mach/" target="_blank">César Machado</a>
 </h4>
 
-## this is the url for this project.
-
-[Web site](https://web-page-six.vercel.app/)
 
 
 
